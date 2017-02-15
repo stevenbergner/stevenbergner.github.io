@@ -2,6 +2,24 @@
 layout: default
 ---
 
+## [](#header-1) Research collection
+
+With an early fascination for algorithms in computer graphics and image analysis,
+my research interests have since evolved along the sensory processing pipeline
+from data acquisition and sampling,
+to feature extraction and classification of multi-dimensional images,
+to enable novel visual mappings that help people to better understand the behaviour of complex simulations.
+
+The account of my work shown in the following is somewhat historical, but given the recent interest in
+convolutional feature learning and layered data processing composed with non-linearities there may be some
+exciting connections.
+
+Feel free to <a href="mailto:{{ site.email | encode_email }}" title="Contact me">contact me</a> with any thoughts to share.
+
+{% include post-list.include %}
+
+## [](#header-1) Layout
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](another-page).
@@ -10,7 +28,7 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# [](#header-1)Header 1
+# [](#header-1)Research
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 

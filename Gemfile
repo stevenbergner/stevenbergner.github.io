@@ -5,4 +5,4 @@ source 'https://rubygems.org'
 gem "github-pages", group: :jekyll_plugins
 
 # https://github.com/vwochnik/jekyll-email-protect
-gem 'jekyll-email-protect'
+gem "jekyll-email-protect"

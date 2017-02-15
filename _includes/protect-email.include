@@ -1,0 +1,9 @@
+<SCRIPT TYPE="text/javascript">
+<!-- 
+emailE=({{ include.email | replace: '@', "' + '@' + '" | prepend: "'" | append: "'" }})
+document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+ //-->
+</script>
+<NOSCRIPT>
+    <em>(Email address protected by JavaScript. Please enable JavaScript to contact me.)</em>
+</NOSCRIPT>

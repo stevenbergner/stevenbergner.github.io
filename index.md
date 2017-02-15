@@ -4,17 +4,12 @@ layout: default
 
 ## [](#header-1) Research collection
 
-With an early fascination for algorithms in computer graphics and image analysis,
-my research interests have since evolved along the sensory processing pipeline
-from data acquisition and sampling,
+This site is an account of projects and output from my work on various topics in data analysis and modelling
+ranging from data acquisition and sampling,
 to feature extraction and classification of multi-dimensional images,
-to enable novel visual mappings that help people to better understand the behaviour of complex simulations.
+to novel visual mappings that help people to better understand and control complex computer codes.
 
-The account of my work shown in the following is somewhat historical, but given the recent interest in
-convolutional feature learning and layered data processing composed with non-linearities there may be some
-exciting connections.
-
-Feel free to <a href="mailto:{{ site.email | encode_email }}" title="Contact me">contact me</a> with any thoughts to share.
+Feel free to contact me at {% include protect-email.include email=site.email %}.
 
 {% include post-list.include %}
 

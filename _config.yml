@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Steven Bergner's research
-email: steven.bergner+web@gmail.com
+email: "sbergner@alumni.sfu.ca"
 description: >
   At the interface between digital and analog worlds
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -24,11 +24,10 @@ github_username:  gitsrc
 
 # Build settings
 markdown: kramdown
-#theme: minima
 theme: jekyll-theme-leap-day
 gems:
-  - jekyll-feed
-  - jekyll-email-protect
+- jekyll-feed
+- jekyll-email-protect
 exclude:
-  - Gemfile
-  - Gemfile.lock
+- Gemfile
+- Gemfile.lock

@@ -7,7 +7,7 @@ collab:
 ---
 
 We look at patches (space-time cubes) of color image sequences and
-conduct independent (ICA) and principle component analysis (ICA) to obtain
+conduct independent (ICA) and principle component analysis (PCA) to obtain
 different basis functions. While the PCA basis functions optimally
 represent the data in a least squares sense, ICA basis functions are
 more suitable for entropy-based variable length encoding. Applied to

@@ -2,10 +2,11 @@
 layout: post
 title:  "Spectral analysis of function composition"
 date:   2006-03-31
+breadcrumb: index
 categories: research
 ---
 Before rendering, data values $f(x)$ at given spatial positions $x$ have to be assigned optical properties and visibility. In mathematical terms this corresponds to function composition $g(f(x))$. We describe the composition as a linear operator and conduct a spectral analysis to estimate a suitable sampling frequency in $x$ to reconstruct the composed signal. We put the theoretical insight to practical effect by implementing a raycaster with an adaptive sampling scheme based on our new estimate.
-The work is described in a <a href="{{ site.baseurl }}/assets/pub/bergner2006gofx.pdf">IEEE TVCG paper</a> (<a href="{{ site.baseurl }}/mybib.html#gofx">bibtex</a>) and has been presented at IEEE Visualization 2006.
+The work is described in a [IEEE TVCG paper]({{ site.baseurl }}/assets/pub/bergner2006gofx.pdf) ([bibtex]({{ site.baseurl }}/mybib.html#gofx)) and has been presented at IEEE Visualization 2006.
 See also Chapter 6 of my [PhD thesis][phdlibrary] ([PDF][phdpdf]) for slightly updated notation.
 
 ![alt text][gofx]

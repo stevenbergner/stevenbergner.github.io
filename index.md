@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## [](#header-1) Research collection
+# [](#header-1) Research collection
 
 Here you can find an overview of my work in data analysis and modelling
 with topics in data acquisition and sampling,

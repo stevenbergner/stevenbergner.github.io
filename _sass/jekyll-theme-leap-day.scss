@@ -182,6 +182,7 @@ header {
     font-size: 18px;
     margin: 0px;
   }
+
 }
 
 #banner {
@@ -296,7 +297,7 @@ nav {
   margin-left:-580px;
   text-align: right;
 
-  ul {
+  ul, ol {
     list-style: none;
     list-style-image:none;
     font-size: 14px;

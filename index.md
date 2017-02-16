@@ -4,11 +4,13 @@ layout: default
 
 ## [](#header-1) Research collection
 
-This site is an account of projects and output from my work on various topics in data analysis and modelling
-ranging from data acquisition and sampling,
-to feature extraction and classification of multi-dimensional images,
-to novel visual mappings that help people to better understand and control complex computer codes.
+Here you can find an overview of my work in data analysis and modelling
+with topics in data acquisition and sampling,
+feature extraction and classification of multi-dimensional images,
+and on visual mappings that facilitate better understanding and control of complex computer codes.
 
-Feel free to contact me at {% include protect-email.include email=site.email %}.
+Feel free to contact me at {% include protect-email.include email=site.email %}
+
+This site is currently **under construction** - watch out for new content!
 
 {% include post-list.include %}

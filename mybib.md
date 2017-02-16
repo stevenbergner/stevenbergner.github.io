@@ -1,6 +1,14 @@
 ---
 layout: default
+breadcrumb: javascript:history.back();
+breadcrumb_name: Back
 ---
+
+# Automatic listing
+
+Note, the listing below is outdated. Find my updated publications list on [Google Scholar]({{site.google_scholar_link}}).
+
+# Publications
 
 <a name="mixergi" />
 <pre>
@@ -164,7 +172,7 @@ layout: default
   number = "SFU-CMPT-TR2004-06",
   year   = "2004",
   month  = "July",
-  note   = "{\em under submission for review at ACM Trans. on Graphics in Sept. 2006}"
+  note   = "{\em ACM Trans. on Graphics in Sept. 2006}"
 }
 </pre>
 <pre>

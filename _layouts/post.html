@@ -9,7 +9,14 @@ layout: default
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    {{ content }}
+    {% if page.collab %}
+    <p>
+    Collaboration with:
+    {{ page.collab | array_to_sentence_string }}
+    </p>
+    {% endif %}
+
+{{ content }}
   </div>
 
   {% if site.disqus.shortname %}

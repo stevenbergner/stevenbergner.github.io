@@ -15,4 +15,4 @@ Feel free to contact me at {% include protect-email.include email=site.email %}
 # [](#header-1) About
 
 This site was built by Steven Bergner using Jekyll with free hosting on GitHub Pages.
-Based on standard themes, you can adapt [the code](https://github.com/stevenbergner/stevenbergner.github.io) to your own content simply by replacing a few files.
+You can adapt [the code](https://github.com/stevenbergner/stevenbergner.github.io) to your own content by replacing a few files.

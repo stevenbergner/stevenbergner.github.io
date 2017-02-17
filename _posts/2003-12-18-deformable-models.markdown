@@ -2,6 +2,7 @@
 layout: post
 title:  "Ant classification using structured deformable shapes"
 date:   2003-12-18
+author: Steven Bergner
 categories: research
 ---
 By matching structural body shape models of several ant species to a macroscopic color image morphological features of the specimen are detected. This enables a proof of concept implementation for semantic content based image retrieval for the <a href="http://insects.oeb.harvard.edu/mcz/">MCZ Type Specimen Database</a> @ <a href="http://www.mcz.harvard.edu/Departments/Entomology/">Harvard Entomology</a>.

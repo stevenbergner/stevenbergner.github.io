@@ -2,6 +2,8 @@
 layout: post
 title: Rendering with a spectral model of light and reflectance
 date: 2008-05-01
+author: Steven Bergner
+categories: research
 collab:
 - <a href="http://www.cs.sfu.ca/~mark">Mark S. Drew</a>
 - <a href="https://research.tableau.com/user/melanie-tory">Melanie Tory</a>
@@ -17,7 +19,7 @@ collab:
 <li>To further facilitate interaction we devise a <a href="{{ site.baseurl }}/assets/img/lightdial.png">n-D slider widget</a> that allows to smoothly progress through a multi-dimensional parameter space by a single mouse dragging operation.
 These first two parts of the approach are discussed in our <a href="http://www.cs.sfu.ca/~torsten/Publications/Papers/tvcg05-2.pdf">IEEE TVCG paper</a> (<a href="{{ site.baseurl }}/mybib.html#pracsvr">bibtex</a>).
 </li>
-<li>Complementary lights and reflectances allow for effects such as metamerism and objective color constancy under changing lighting. A <a href="https://web.archive.org/web/20131011095622/http://www.cs.sfu.ca/~sbergner/personal/pub/colpaper.pdf">paper on the spectral design method (preprint)</a> has recently been accepted for publication at <a href="http://tog.acm.org/">acm Transactions on Graphics</a>. The related <a href="http://www.cs.sfu.ca/gruvi/Projects/Spectral_Engine/specgen.html">Matlab and Java code</a> is publicly available.
+<li>Complementary lights and reflectances allow for effects such as metamerism and objective color constancy under changing lighting. A <a href="{{ site.baseurl }}/assets/pub/bergner-tog09.pdf">paper on the spectral design method (preprint)</a> has been published at <a href="http://tog.acm.org/">acm Transactions on Graphics</a>. The related <a href="http://www.cs.sfu.ca/gruvi/Projects/Spectral_Engine/specgen.html">Matlab and Java code</a> is publicly available.
 </li>
 </ul>
 

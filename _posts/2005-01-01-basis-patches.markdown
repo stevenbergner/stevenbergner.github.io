@@ -2,6 +2,8 @@
 layout: post
 title: Learning kernels for spatio-temporal-chromatic image data
 date: 2005-05-01
+author: Steven Bergner
+categories: research
 collab:
 - <a href="http://www.cs.sfu.ca/~mark">Mark S. Drew</a>
 ---

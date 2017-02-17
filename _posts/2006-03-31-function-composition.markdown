@@ -2,6 +2,7 @@
 layout: post
 title:  "Spectral analysis of function composition"
 date:   2006-03-31
+author: Steven Bergner
 breadcrumb: index
 categories: research
 collab:

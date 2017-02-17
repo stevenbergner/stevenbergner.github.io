@@ -2,6 +2,7 @@
 layout: post
 title:  "Physically-based rendering for 3D medical reconstruction"
 date:   2005-10-23
+author: Steven Bergner
 breadcrumb: index
 categories: research
 collab:

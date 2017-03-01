@@ -7,7 +7,10 @@ categories: research
 ---
 By matching structural body shape models of several ant species to a macroscopic color image morphological features of the specimen are detected. This enables a proof of concept implementation for semantic content based image retrieval for the <a href="http://insects.oeb.harvard.edu/mcz/">MCZ Type Specimen Database</a> @ <a href="http://www.mcz.harvard.edu/Departments/Entomology/">Harvard Entomology</a>.
 ![alt text][sdm-framework]
-The <a href="{{ site.baseurl }}/assets/img/sdm-framework.jpg">hierarchical recognition model</a> contains:
+The code [is available on GitHub](https://github.com/git-steb/structural-deformable-models)
+with [auto-generated documentation](https://git-steb.github.io/structural-deformable-models/).
+
+The hierarchical recognition model contains:
 <ul>
 <li> a compound deformable model where occurrence of structural components influences the distribution for search for further shapes (e.g. a neck should be near the head and vice versa),</li>
 <li> a finite element model of deformable shape components, for which the involved physical parameters are learned from training data,</li>

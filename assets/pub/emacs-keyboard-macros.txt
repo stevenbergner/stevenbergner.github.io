@@ -1,0 +1,87 @@
+:Intro to Emacs keyboard macros:
+
+C-              prefix to hold ctrl (strg)
+M-              prefix to hold meta or alt
+S-              prefix to hold shift
+
+C-x C-c         exit emacs
+C-g             abort current command prompt
+
+M-x command     enter command (see list below)
+TAB             typing command: auto-complete
+                text mode: indent line or region
+C-h ?           get help on keys, commands, etc.
+C-_             undo/redo once or more
+C-+             switch redo/undo direction
+
+:Macro recording:
+
+C-x (           start recording keyboard macro
+C-x )           stop recording macro
+C-x e           execute macro, press e again to repeat
+C-<number> ...  perform ... a number of times
+
+Make repeatable macros by ending in the right place for the
+next iteration to start. Change text in place or switch cursor to
+specially prepared buffers (make buffer **: C-x b ** Ret,
+switch: C-x b Ret) or windows (split: C-2 or C-3, switch: C-x o).
+
+:Files, buffers, and windows:
+
+C-x C-f         open file in new buffer in current window
+C-x C-s         save current buffer to file
+C-x C-w         write file with new name
+C-x k           close (kill) current buffer
+
+C-x b name      switch to named or new buffer, show existing with TAB
+C-x C-b         show open buffers
+C-x 2           split window horizontally
+C-x 3           split window vertically
+C-x 1           extend window to merge with other window
+C-x o           switch focus to other window
+
+:Selection and working with regions:
+
+C-space         set marker, e.g. to start a region selection
+M-w             copy region between marker and current cursor position
+C-w             cut region (add to regions in kill ring)
+M-d             cut word on right
+M-backspace     cut word on left
+C-k             cut rest of current line (prefix C-<number> cuts more lines)
+
+C-y             paste (yank) region
+M-y             switch yanked region to previous one in kill ring
+C-x r s [0-9]   save current region to register number
+C-x r i [0-9]   paste register of given number
+
+:Search and navigation:
+
+C-s word        incremental search for word
+C-r word        reverse incremental word search
+
+C-a, C-e        beginning, end of line (e.g. to end macro at line start)
+C-f, C-b        right, left one character
+M-f, C-right    right one word
+M-b, C-left     left one word
+C-up, C-down    up, down to next paragraph or empty line
+C-p, C-n        up, down one line
+C-v, M-v        scroll down, up a page (know how to undo C-v)
+
+:List of M-x commands and related key commands:
+
+text-mode               basic text editor
+hexl-mode               hexadecimal editor
+line-number-mode        show line number
+column-number-mode      show column number
+toggle-truncate-lines   word wrap lines display on/off
+M-q                     hard wrap lines in current paragraph
+M-l                     place current line at center, top, or bottom
+M-%                     query repace
+M-/                     auto-complete word in text mode
+search-forward
+replace-string
+beginning-of-buffer     if you do not remember the shortcut
+end-of-buffer
+auto-revert-mode        update buffer, when file changes on disk
+package-install         emacs package management
+eval-region             execute LISP expression in region (e.g. in ~/.emacs)

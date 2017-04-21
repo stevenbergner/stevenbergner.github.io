@@ -10,6 +10,18 @@ Note, the listing below is outdated. Find my updated publications list on [Googl
 
 # Publications
 
+Bergner, S. (2011), “Making choices in multi-dimensional parameter spaces”, PhD Thesis, Simon Fraser University.
+<pre>
+@phdthesis{Bergner:2011:choices,
+  author       = "Steven Bergner",
+  title        = "Making choices in multi-dimensional parameter spaces",
+  school       = "Simon Fraser University",
+  year         = "2011",
+  month        = 12,
+  note         = "http://summit.sfu.ca/item/12089"
+}
+</pre>
+
 <a name="mixergi" />
 <pre>
 @inproceedings{Crider:2007:mixer,
@@ -20,7 +32,7 @@ Note, the listing below is outdated. Find my updated publications list on [Googl
            Applications",
   booktitle = "Graphics Interface 2007",
   pages = "87--94",
-	address = "Montreal",
+  address = "Montreal",
   month = "May",
   year = "2007"
 }

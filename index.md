@@ -2,13 +2,14 @@
 layout: default
 ---
 
-I publish **code** at [GitHub/git-steb](https://github.com/git-steb) and can be reached via **email** to {% include protect-email.include email=site.email %}
+* **code:** [github.com/git-steb](https://github.com/git-steb)
+* **email:** {% include protect-email.include email=site.email %}
 
-# [](#header-1) Research collection
+# [](#header-1) Research topics
 
-Here you can find some highlights of my work as researcher with active fields of interest in computing science, applied mathematics, and statistics with topics of focus in data acquisition and sampling,
-feature extraction and classification of multi-dimensional images,
-and on visual mappings that facilitate better understanding and control of complex computer codes.
+* Data acquisition and sampling
+* Feature extraction and classification of multi-dimensional images
+* Visual mappings to facilitate understanding and control of complex computer codes
 
 {% include post-list.include %}
 

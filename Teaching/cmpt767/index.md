@@ -26,8 +26,8 @@ More details can be found in the [Course Outline - Fall 2018](https://portal.cs.
 
 Instructor: | Steven Bergner &lt;{% include protect-email.include email=site.email %}&gt;
 Teaching assistant: | Kangxue Yin
-Lecture: | W 10:30 am - 12:20 pm
-Lab: | M 11:30 am - 12:20 pm
+Lecture: | W 10:30 am - 12:20 pm, [WMC 3253](https://roomfinder.sfu.ca/apps/sfuroomfinder_web/)
+Lab: | M 11:30 am - 12:20 pm, [ASB 10928](https://roomfinder.sfu.ca/apps/sfuroomfinder_web/)
 Assignment submission: | [CourSys](https://coursys.sfu.ca/2018fa-cmpt-767-g1/)
 {: .small-table }
 

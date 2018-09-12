@@ -34,6 +34,8 @@ Assignment submission: | [CourSys](https://coursys.sfu.ca/2018fa-cmpt-767-g1/)
 # Schedule
 (tentative)
 
+* [Homework 1](cmpt767-hw1) posted
+
 {% include schedule.snippet %}
 
 # Reading

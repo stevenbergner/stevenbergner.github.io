@@ -1,5 +1,8 @@
 {% if page.url != '/' %}
 <ol class="breadcrumb">
+{% if page.breadcrumb %}
+<li><h3><a href="{{ page.breadcrumb }}">{{ page.breadcrumb_name | default: "Home" }} </a></h3></b></li>
+{% else %}
 <li><h3><a href="{{ site.baseurl }}/">{{ page.breadcrumb_name | default: "Home" }} </a></h3></b></li>
 {% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
 {% assign splitted_url_parts = page_url_without_index_html | split: '/' %}
@@ -20,5 +23,6 @@
         {% endif %}
     {% endfor %}
 {% endfor %}
+{% endif %}
 </ol>
 {% endif %}

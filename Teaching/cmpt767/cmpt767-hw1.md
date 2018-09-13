@@ -59,7 +59,7 @@ Public and Professional Editions.
 
 The first part of your assignment is to develop a *single* interactive
 Tableau dashboard with several views, that would allow manipulation and
-exploration of the Canada Census dataset in various ways. A view is a
+exploration of the City of Urbana arrests dataset in various ways. A view is a
 single graphical representation of the data (i.e. a chart) and a
 dashboard connects multiple views in a meaningful way. Any dashboards
 after the first will not be counted towards your grade.

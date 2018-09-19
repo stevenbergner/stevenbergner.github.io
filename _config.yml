@@ -28,7 +28,7 @@ google_analytics: UA-92210578-1
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-leap-day
-gems:
+plugins:
 - jekyll-feed
 - jekyll-email-protect
 exclude:

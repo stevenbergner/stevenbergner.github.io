@@ -14,23 +14,7 @@
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript" async
-            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
-     MathJax.Hub.Config({
-         tex2jax: {
-             inlineMath: [['$','$'], ['\\(','\\)']],
-             processEscapes: true,
-         },
-         TeX: {
-             Macros: {
-                 RR: "{\\mathbb R}",
-                 ZZ: "{\\mathbb Z}",
-                 CC: "{\\mathbb C}",
-                 mb: ["{\\bf #1}",1],
-             }
-         },
-     });
-    </script>
+    {% include mathjax-setup.inc %}
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
@@ -77,19 +61,6 @@
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-
-    {% if site.google_analytics %}
-    <script type="text/javascript">
-     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-     try {
-         var pageTracker = _gat._getTracker("{{ site.google_analytics }}");
-         pageTracker._trackPageview();
-     } catch(err) {}
-    </script>
-    {% endif %}
-
+    {% include analytics.inc %}
   </body>
 </html>

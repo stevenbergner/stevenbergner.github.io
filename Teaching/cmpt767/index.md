@@ -35,6 +35,7 @@ Assignment submission: | [CourSys](https://coursys.sfu.ca/2018fa-cmpt-767-g1/)
 (tentative)
 
 * [Homework 1](cmpt767-hw1) posted
+* [Lab 2 - Python for Vis Tutorial](lab2/pyvis-slides) posted
 
 {% include schedule.snippet %}
 

@@ -1,0 +1,1 @@
+<script type="text/javascript">emailE=({{ include.email | replace: '@', "' + '@' + '" | prepend: "'" | append: "'" }}); document.write(emailE)</script><noscript><em>(Email address protected by JavaScript. Please enable JavaScript to contact me.)</em></noscript>

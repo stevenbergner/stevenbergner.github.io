@@ -69,6 +69,7 @@ jupyter lab --no-browser --port=8889
 <section>
 # IPyWidgets / Jupyter Widgets
 
+* [Jupyter Dashboard Layouts](https://jupyter-dashboards-layout.readthedocs.io/en/latest/using.html)
 * [IPyWidgets Documentation](https://ipywidgets.readthedocs.io)
 </section>
 

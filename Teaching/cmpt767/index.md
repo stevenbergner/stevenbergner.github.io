@@ -18,6 +18,7 @@ table.small-table td {
 }
 td {
     border: 0px;
+}
 </style>
 
 Data-driven innovations are shaping the way we live today. Visualization is at the interface between computation and people who work with data and algorithms. Targeting practitioners with computing science background, this course is focused on tools and advanced methods with applications including Biomedicine, Science, and Business.
@@ -36,8 +37,9 @@ Assignment submission: | [CourSys](https://coursys.sfu.ca/2018fa-cmpt-767-g1/)
 
 * [Homework 1](cmpt767-hw1) posted
 * [Lab 2 - Python for Vis Tutorial](lab2/pyvis-slides) posted
+* [Homework 2](hw2/) posted
 
-{% include schedule.snippet %}
+{% include_relative schedule.snippet %}
 
 # Reading
 

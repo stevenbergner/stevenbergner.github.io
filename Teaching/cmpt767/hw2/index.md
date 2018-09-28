@@ -105,6 +105,17 @@ this question:
 ![](img/hw2-fig3-genres2.png)
 Figure 3: A potential output for Question 3.
 
+You can use this code, if you find it useful:
+```
+function transposeArray(array) {
+  return array[0].map(function (col, i) {
+    return array.map(function (row) {
+      return row[i];
+    });
+  });
+}
+```
+
 ## Question 4
 
 Let’s add user interactions to our column chart. Start with a copy of the code that you developed

@@ -109,7 +109,7 @@ Figure 3: A potential output for Question 3.
 
 Let’s add user interactions to our column chart. Start with a copy of the code that you developed
 in the previous question. Modify your code such that a user can select a subset of viewer groups. Here we
-will use [occupation_genre.csv](data/occupation_genre.csv).
+will use [occupation_genre_p.csv](data/occupation_genre_p.csv).
 
 This file contains the joint conditional probabilities for different users' occupations. Your output may look
 like Fig. 4. Use the file name `“index4.html”` for this question.

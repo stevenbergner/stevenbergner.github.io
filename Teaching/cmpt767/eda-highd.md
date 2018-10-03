@@ -1,7 +1,7 @@
 ---
 layout: slide
 author: Steven Bergner
-title: EDA / High-Dimensional & Continuous Data
+title: Exploratory Data Analysis
 date: October 3rd, 2018
 theme: beige
 transition: slide
@@ -22,9 +22,7 @@ transition: slide
 <section>
 # Overview
 * Exploratory Data Analysis (EDA)
-* Multi/high-dimensional data
-* Data acquisition and representation
-* Interpolation of spatial data
+* Techniques for 1-, 2-, multi-, high-dimensional data
 </section>
 
 <section>
@@ -46,8 +44,8 @@ transition: slide
 <section>
 # Aspects of EDA
 * **Variation**: tendency of the values of a variable to change from measurement to measurement
-  - Study: distribution, typical values, unusual values, missing
-* **Covariation**: tendency for values of two or more variables to vary together in a related way
+  - {: .element: class="fragment" } Study: distribution, typical values, unusual values, missing
+* {: .element: class="fragment" } **Covariation**: tendency for values of two or more variables to vary together in a related way
   - Compare: A categorical and a continuous variable
 </section>
 
@@ -117,8 +115,13 @@ Data: 272 eruptions of the Old Faithful Geyser in Yellowstone National Park
 
 <section>
 # High-dimensional data
-* PCA: [Quantopian lecture](https://www.quantopian.com/lectures/principal-component-analysis)
-* t-SNE - [use effectively](https://distill.pub/2016/misread-tsne/)
+**Dimensionality reduction**
+* Principle Component Analysis (PCA)
+  - [Quantopian lecture](https://www.quantopian.com/lectures/principal-component-analysis)
+* [t-SNE (t-distributed Stochastic Neighbor Embedding](http://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
+  - [Algorithm details [Maaten/Hinton]](https://docs.google.com/presentation/d/1uOWkXVdEL_P9kO-kCmjkeLdVGR-oYb-3_mLlXp0Ezs8)
+  - [How to use effectively [Wattenberg]](https://distill.pub/2016/misread-tsne/)
+* Force-directed layouts (later lecture)
 </section>
 
 <style>

@@ -168,8 +168,9 @@ via D3. Avoid directly using Google searches for creating this bubble chart! You
 Fig. 5. Name your final HTML file `“index5.html”` for this question.
 
 ![](img/hw2-fig5-fertitility.png)
-Figure 5: Your visualization for question 5 should look like this graph. Make sure to include tooltips
-(rectangular box that appears when hovering mouse over a country).
+Figure 5: Your visualization for question 5 should look similar to this graph, except you may use birth rate instead of fertility rate.
+Also, it is OK if you preprocess and reduce the `nations.csv` dataset to more easily match the reduced visual complexity of the example. In that case, please include your modified data as part of `extra-files.zip` in your submission. 
+Make sure to include tooltips (rectangular box that appears when hovering mouse over a country).
 
 ## Question 6
 
@@ -179,6 +180,9 @@ these locations on a geographical map using some statistics.
 More precisely, using a popular hashtag (e.g. #ethereum), trending at the moment you are reading
 this question, we will retrieve a stream of tweets filtering that particular hashtag. Then, we will use D3 to
 visualize these tweets’ locations and the number of tweets from users of different countries.
+
+**Aternative Steps 1-3: Use pre-recorded tweets about the World Cup 2018**
+In case you have trouble obtaining useful location information via the Twitter API, you are free to use [this dataset of World Cup tweets](data/data_fifa_wc_finals.csv) courtesy of Mayank Vachher. If you choose to obtain your own twitter data instead, follow steps 1-3 below.
 
 **Step 1: Choose a trending hashtag**
 Use either twitter or a third-party website such as <https://www.hashtags.org/> to identify a trending hashtag.

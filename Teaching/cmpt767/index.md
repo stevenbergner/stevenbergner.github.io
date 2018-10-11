@@ -32,12 +32,12 @@ Lab: | M 11:30 am - 12:20 pm, [ASB 10928](https://roomfinder.sfu.ca/apps/sfuroom
 Assignment submission: | [CourSys](https://coursys.sfu.ca/2018fa-cmpt-767-g1/)
 {: .small-table }
 
-# Schedule
-(tentative)
+# Schedule (tentative)
 
 * [Homework 1](cmpt767-hw1) posted
 * [Lab 2 - Python for Vis Tutorial](lab2/pyvis-slides) posted
 * [Homework 2](hw2/) posted
+* [Project Topics](project-topics) posted
 
 {% include_relative schedule.snippet %}
 

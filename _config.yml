@@ -19,7 +19,7 @@ description: >
   At the interface between digital and analog worlds
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: 
+#twitter_username:
 owner_name: Steven Bergner
 github_username:  gitsrc
 google_scholar_link: "https://scholar.google.ca/citations?user=ibDDNIYAAAAJ&hl=en&oi=ao"

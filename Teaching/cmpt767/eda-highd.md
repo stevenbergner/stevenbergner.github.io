@@ -7,6 +7,7 @@ theme: beige
 transition: slide
 ---
 {::options parse_block_html="true" /}
+{% include_relative slide-theme-customization.snippet %}
 
 <section>
 # {{page.title}}
@@ -123,16 +124,3 @@ Data: 272 eruptions of the Old Faithful Geyser in Yellowstone National Park
   - [How to use effectively [Wattenberg]](https://distill.pub/2016/misread-tsne/)
 * Force-directed layouts (later lecture)
 </section>
-
-<style>
-.reveal h1 { font-size: 2.5em; }
-.reveal .slides section { text-align:left; }
-.reveal .slides .small { font-size: .8em; }
-.reveal .slides .tiny { font-size: .5em; }
-.container{
-    display: flex;
-}
-.col{
-    flex: 1;
-}
-</style>

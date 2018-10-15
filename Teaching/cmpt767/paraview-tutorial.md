@@ -87,9 +87,9 @@ Add data to 3D scene
 <section>
 # Work with filters
 Perform basic filtering on the provided data
-* Slicing
+* Slice
 * Iso-surface
-* Extract surface
+* Extract surface to apply smoothing
 * Clipping
 </section>
 

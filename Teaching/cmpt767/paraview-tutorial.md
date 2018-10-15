@@ -30,11 +30,25 @@ transition: fade-in
 </section>
 
 <section>
+# Data for today in the lab
+* Download data to `/tmp/<username>` on your lab machine and start `paraview`:
+```
+mkdir -p /tmp/$LOGNAME
+cd !$
+wget http://vault.sfu.ca/index.php/s/xMj3gafODzHiQOt/download -O pvtut-data.tgz
+tar xzf pvtut-data.tgz
+cd pvtut-data
+/usr/shared/CMPT/big-data/ParaView-5.5.2-Qt5-MPI-Linux-64bit/bin/paraview
+```
+{: .small }
+</section>
+
+<section>
 # Workflow to make a figure
 * Create a data source (load data)
 * Inspect available variables and ranges
 * Adjust view and display settings
-* Adjust representation and coloring
+* Adjust visual representation and coloring
 * Adjust text and legend
 </section>
 
@@ -77,9 +91,17 @@ Perform basic filtering on the provided data
 * Iso-surface
 * Extract surface
 * Clipping
-* Vectors
-* Streamlines
 </section>
 
 <section>
+# Advanced: Motorbike
+* Smaller dataset (obtained via clipping)
+* Contour plot of iso-Q
+* Extract the isosurface
+* Smooth
+* Save the surface for future visualization
+* Color by velocity or pressure or both and compare
+* Build a filter that will do all the work in a single click
+* Add text and colorbar
+* Save meaningful visualizations
 </section>

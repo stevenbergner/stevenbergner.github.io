@@ -3,23 +3,7 @@ title: Cmpt 767 - HW 3 - Visualization of spatial data
 breadcrumb: ../index.html
 breadcrumb_name: Course Page
 ---
-<style>
-table.small-table {
-    font-size: 16px;
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: 0px
-    padding-bottom: 0em
-}
-table.small-table td {
-    padding: 0px
-}
-td {
-    border: 0px;
-}
-</style>
-
-In this assignment you will apply different techniques for visualization of spatial data in 2D or 3D domains with scalar and multi-variate attributes.
+In this assignment you will apply different techniques for visualization of spatial data with scalar and multi-variate attributes.
 
 # Preparation
 

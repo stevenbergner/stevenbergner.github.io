@@ -1,9 +1,9 @@
 ---
-title: Cmpt 767 - HW 3 - Visualization of spatial data
+title: Cmpt 767 - HW 3 - Visualization of 3D spatial data
 breadcrumb: ../index.html
 breadcrumb_name: Course Page
 ---
-In this assignment you will apply different techniques for visualization of spatial data with scalar and multi-variate attributes.
+Goal of this assignment is to study volumetric scalar and vector fields with different visualization methods to learn about computational fluid simulations applied to aerodynamics and climate research.
 
 # Preparation
 
@@ -17,7 +17,7 @@ You will need to submit result figures and paraview state *.pvsm* files for ques
 
 Also, you may need to make use of a tool called CDO (Climate Data Operators), documented [here](https://code.mpimet.mpg.de/projects/cdo/embedded/index.html), which is available in the lab if you use the provided conda environment, for instance, by following these steps:
 ```
-mkdir ~/.conda/envs
+mkdir -p ~/.conda/envs
 ln -s /usr/shared/CMPT/big-data/condaenv/py36 ~/.conda/envs
 source activate py36
 cdo -h
@@ -47,7 +47,7 @@ Use `motorBike_500.vtk` as data source, which originates from a [flow simulation
 * Do tubulent structures behind the bike extend symmetrically right and left of the path? If not, what may be the cause of potential asymmetry?
 * Which body parts of the rider experience the highest tangential force?
 
-As a hint, this example displays some aspects of the visualization that we would like you to produce.
+As a hint, this example displays some aspects of the visualization for this question.
 ![](img/motorbike.png)
 
 **Submission**
@@ -63,7 +63,7 @@ Use `3d_lonlat_1_one.nc` of the [SciVis contest 2017](https://www.dkrz.de/SciVis
 
 ## Tasks
 
-Slightly less constrained than the previous question, we would like you to apply visualization techniques of your choice to illustrate physical conditions of cloud formation.
+Illustrate physical conditions of cloud formation by combining different visualization techniques.
 
 **Getting started: Inspect the available fields**
 
@@ -71,7 +71,7 @@ Load `3d_lonlat_1_one.nc` into paraview and check the available variables. Also,
 
 **Q2a: Scale spatial dimensions**
 
-Upon loading the data, you'll notice that the shape of the bounding *box* is not proportional with the true spatial extents, exagerating the height the over available lat/lon range by a large factor. Transform the dataset to fix this scaling problem.
+Upon loading the data, you'll notice that the shape of the bounding *box* is not proportional with the true spatial extents, exagerating the height relative to the lat/lon range by a large factor. Transform the dataset to fix this scaling problem.
 
 **Q2b: Extract cloud 'surfaces'**
 

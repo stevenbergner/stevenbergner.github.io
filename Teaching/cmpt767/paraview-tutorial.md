@@ -38,7 +38,7 @@ cd !$
 wget http://vault.sfu.ca/index.php/s/xMj3gafODzHiQOt/download -O pvtut-data.tgz
 tar xzf pvtut-data.tgz
 cd pvtut-data
-/usr/shared/CMPT/big-data/ParaView-5.5.2-Qt5-MPI-Linux-64bit/bin/paraview
+/usr/shared/CMPT/big-data/ParaView-5.6.0-RC3-MPI-Linux-64bit/bin/paraview
 ```
 {: .small }
 </section>
@@ -94,6 +94,7 @@ Perform basic filtering on the provided data
 </section>
 
 <section>
+<section>
 # Advanced: Motorbike
 * Smaller dataset (obtained via clipping)
 * Contour plot of iso-Q
@@ -104,4 +105,21 @@ Perform basic filtering on the provided data
 * Build a filter that will do all the work in a single click
 * Add text and colorbar
 * Save meaningful visualizations
+</section>
+
+<section id="motorbike-fields">
+# Motorbike - [field](https://www.openfoam.com/documentation/cpp-guide/html/guide-function-objects-field.html) meanings
+
+* [Turbulence fields](https://www.openfoam.com/documentation/cpp-guide/html/guide-fos-field-turbulence-fields.html)
+  - *k*: turbulence kinetic energy
+  - *nut*: eddy kinematic viscosity
+  - *omega*: specific dissipation rate
+  - [*Q criterion*](https://www.openfoam.com/documentation/cpp-guide/html/guide-fos-field-q.html): second invariant of the velocity gradient tensor
+* Forces
+  - *p*: pressure
+  - *U*: velocity field
+  - *UNear*: velocity near wall
+  - [*wallShearStress*](https://www.openfoam.com/documentation/cpp-guide/html/classFoam_1_1functionObjects_1_1wallShearStress.html#details)
+{: .small }
+</section>
 </section>

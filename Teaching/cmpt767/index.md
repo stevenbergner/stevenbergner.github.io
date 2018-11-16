@@ -34,12 +34,7 @@ Assignment submission: | [CourSys](https://coursys.sfu.ca/2018fa-cmpt-767-g1/)
 
 # Schedule (tentative)
 
-* [Homework 1](cmpt767-hw1) posted
-* [Lab 2 - Python for Vis Tutorial](lab2/pyvis-slides) posted
-* [Homework 2](hw2/) posted
-* [Project Topics](project-topics) posted
-* [Homework 3](hw3/) posted
-
+Shortcuts: [HW 1](cmpt767-hw1), [HW 2](hw2/), [Projects](project-topics), [HW 3](hw3/)
 {% include_relative schedule.snippet %}
 
 # Reading

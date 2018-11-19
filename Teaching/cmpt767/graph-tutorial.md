@@ -42,9 +42,9 @@ source activate py36
 python
 >>> import graph_tool.all as gt
 >>> print(gt.__version__.split(' ')[0])
-2.26
+2.27
 ```
-* Environment also contains `scikit-learn, pandas, jupyter (dashboards), statsmodels, ...`
+* Environment also contains `pandas, jupyter (dashboards), statsmodels, bqplot, qgrid, ...`
 {: .small }
 </section>
 
@@ -69,7 +69,7 @@ python
 </section>
 
 <section>
-## Before starting
+## How to start
 * Define your problem
 * Convert it into graph representation, i.e. determine what `nodes` and `edges` are
 </section>
@@ -81,6 +81,7 @@ python
 |**Vertex**|Person|#Knows
 |**Edge**|Knows|Count
 
+* [Accompanying notebook](graph-tool-tutorial-todo.ipynb)
 </section>
 
 <section>
@@ -100,6 +101,22 @@ python
 {: .small }
 
 </section>
+{: .small }
+
+{::comment}
+X_knows = {
+    'Mary': ['Peter', 'Albert', 'DavidF', 'Peter'],
+    'Judy': ['Bob', 'Alan'],
+    'Peter': ['Mary', 'DavidF', 'Jon'],
+    'DavidF': ['Albert', 'Joseph', 'Peter', 'Mary'],
+    'Jon': ['Peter', 'Joseph', 'DavidE'],
+    'DavidE': ['Jon', 'Joseph', 'Albert'],
+    'Joseph': ['DavidE', 'Jon', 'DavidF'],
+    'Bob': ['Judy', 'Alan'],
+    'Alan': ['Bob', 'Mary', 'Judy'],
+    'Albert': ['DavidF', 'Mary', 'DavidE'],
+}
+{:/comment}
 
 <section>
 ## Create minimal graph
@@ -160,7 +177,7 @@ gt.graph_draw(
     output_path = 'output.png'
 )
 ```
-* TODO: show example drawing
+* **Task 1:** Try this for one of the example graphs in the collection
 </section>
 
 <section>
@@ -195,7 +212,11 @@ gt.graph_draw(
 )
 ```
 {: .small }
-* TODO: show picture with edge width scaled by weight
+* **Task 2:** Produce a diagram of [this graph](https://graph-tool.skewed.de/static/doc/_downloads/search_example.xml)
+  - `g = gt.load_graph("search_example.xml")`
+  - learn about its vertex and edge properties
+  - have edge width scaled by `weight`
+{: .small }
 </section>
 
 <section>
@@ -206,7 +227,6 @@ gt.graph_draw(
     vertex_fill_color = v_size_p,
 )
 ```
-* TODO: show colored nodes
 </section>
 
 </section>
@@ -216,30 +236,30 @@ gt.graph_draw(
 # Analyze Graph
 </section>
 <section>
-## Choose an Algorithm
-* Search algorithms
+## Choose an [Algorithm](https://graph-tool.skewed.de/static/doc/modules.html)
+* [**Search algorithms**](https://graph-tool.skewed.de/static/doc/search_module.html)
   * BFS search
-* Assessing graph topology
-  * Shortest path
-* Centrality measures
-  * pagerank, betweenness, closeness
-* Maximum flow algorithms
-* Community structures
-* Clustering coefficients
+* **Graph topology**
+  * Shortest path, Connected components
+* **Centrality measures**
+  * PageRank, Betweenness, Closeness
+* **Maximum flow algorithms**
+* [**Community structures**](https://graph-tool.skewed.de/static/doc/demos/inference/inference.html)
+* **Clustering coefficients**
 {: .small }
 </section>
 <section>
 ## Centrality measures
-* Degree centrality
+* **Degree centrality**
   * Number of links incidend upon a node
   * "Immediate risk of taking a node out"
-* Closeness centrality
+* {: fr } **Closeness centrality**
   * Sum of a node's distances to all other nodes
   * "Cost to spread information to all other nodes"
-* Betweenness centrality
+* {: fr } **Betweenness centrality**
   * Number of times a node acts as a bridge
   * "Control of a node on the communication between other nodes"
-* Eigenvector centrality
+* {: fr } **Eigenvector centrality**
   * Influence of a node in a network
   * Google's PageRank is a variant of this measure
 {: .small }
@@ -247,9 +267,12 @@ gt.graph_draw(
 <section>
 ## Example cont'd
 Choice of measure:
-* Centrality measures - Closeness centrality
-* TODO: Get the products are easier to all other products
+* {: fr } Centrality measures - Closeness centrality
 
+**Goal:** Identify the people with shortest connection to all other people
+</section>
+
+<section>
 ## Calculate Closeness
 ```
 e_icount_p = g.new_edge_property('int')
@@ -260,8 +283,9 @@ v_cl_p = closeness(g, weight=e_icount_p)
 import numpy as np
 v_cl_p_.a = np.nan_to_num(v_cl_p.a)
 ```
-{: .small }
+</section>
 
+<section>
 ## Draw Closeness
 ```
 v_cl_size_p = gt.prop_to_size(
@@ -276,6 +300,7 @@ gt.graph_draw(
 )
 ```
 </section>
+
 <section>
 ## On-the-fly Filtering
 ```
@@ -286,8 +311,9 @@ g.set_vertex_filter(v_pck_p)
 # g.set_vertex_filter(None) # unset
 ```
 {: .small }
-(TODO: show example)
+* **Task:** Use the [graph filtering tutorial](https://graph-tool.skewed.de/static/doc/quickstart.html#graph-filtering) to create an example
 </section>
+
 <section>
 ## Top N
 ```
@@ -298,7 +324,6 @@ t1_v	 = g.vertex(t1_idx)
 t1_name  = v_name_p[t1_v]
 t1_count = v_count_p[t1_v]
 ```
-{: .small }
 </section>
 
 <section>
@@ -323,7 +348,6 @@ gt.graph_draw(
         vweight=v_count_p
     ),
 ```
-(TODO: show example)
 </section>
 
 <section>
@@ -345,6 +369,8 @@ gt.graph_draw(
 
 <section>
 ## ARF Layout
+* "[attractive and repulsive forces](https://arxiv.org/abs/0704.1748v5)"
+
 ```
 gt.graph_draw(
     ...
@@ -370,7 +396,7 @@ gt.graph_draw(
 </section>
 
 <section>
-# Conclusion
+# Graph analysis workflow
 * Define problem in graphic form
 * Clean the raw data
 * Visualize to understand

@@ -34,7 +34,7 @@ Assignment submission: | [CourSys](https://coursys.sfu.ca/2018fa-cmpt-767-g1/)
 
 # Schedule (tentative)
 
-Shortcuts: [HW 1](cmpt767-hw1), [HW 2](hw2/), [Projects](project-topics), [HW 3](hw3/)
+Shortcuts: [HW 1](cmpt767-hw1), [HW 2](hw2/), [Projects](project-topics), [HW 3](hw3/), [HW 4](hw4/)
 {% include_relative schedule.snippet %}
 
 # Reading

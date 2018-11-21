@@ -11790,7 +11790,7 @@ div#notebook {
 <li>visualize graphs and their properties.</li>
 </ul>
 <p>For further background on <code>graph-tool</code> refer to the <a href="../graph-tutorial">graph tutorial slides</a> and the <a href="../graph-tool-tutorial-todo.ipynb">tutorial notebook</a>. There you can also find instructions on how to use the <code>py36 conda</code> environment in the Big Data Lab, which has all required dependencies installed.</p>
-<p><strong>Submission:</strong> Fill out <a href="HW4-graph-analysis.ipynb">this notebook</a> and submit is on CourSys.</p>
+<p><strong>Submission:</strong> Fill your answers into <a href="HW4-graph-analysis.ipynb">this notebook</a> and submit on CourSys.</p>
 
 </div>
 </div>
@@ -12092,7 +12092,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For the following question let us work with a real social graph, based on facebook friendship connections. Please download <a href="https://snap.stanford.edu/data/ego-Facebook.html"><code>facebook_combined.txt</code> from SNAP</a>, the Stanford Large Network Dataset Collection SNAP large-graph repository at Stanford and create a <code>Graph</code> object with <code>graph-tool</code>. The dataset contains the ego networks of 10 facebook users, i.e. the friend of each of these users and the connections among those friends.</p>
+<p>For the following question let us work with a real social graph, based on facebook friendship connections. Please download <a href="https://snap.stanford.edu/data/ego-Facebook.html"><code>facebook_combined.txt</code> from SNAP</a>, the Stanford Large Network Dataset Collection SNAP large-graph repository and create a <code>Graph</code> object with <code>graph-tool</code>. The dataset contains the ego networks of 10 facebook users, i.e. the friends of each of these users and the connections among those friends.</p>
 <p>Goal of this questions is to use centrality measures to determine influencers among the users, not including the ego nodes themselves.</p>
 
 </div>
@@ -12187,54 +12187,6 @@ div#notebook {
 </pre></div>
 
 </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[231]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[231]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;BarContainer object of 9 artists&gt;</pre>
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-"
->
-</div>
-
-</div>
-
 </div>
 </div>
 

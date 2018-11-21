@@ -337,17 +337,20 @@ gt.graph_draw(
 )
 ```
 ```
+    ...
     pos = gt.sfdplayout(
         g, eweight=e_count_p
     ),
 ```
 ```
+    ...
     pos = gt.sfdplayout(
         g,
         eweight=e_count_p,
         vweight=v_count_p
     ),
 ```
+{: .small }
 </section>
 
 <section>

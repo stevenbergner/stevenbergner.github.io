@@ -11786,7 +11786,7 @@ div#notebook {
 <p>In this assignment you will get to work with graphs using the <a href="https://graph-tool.skewed.de/">graph-tool python module</a>.</p>
 <p>Learning goals are:</p>
 <ul>
-<li>perform basic network analysis to create derived graph properties</li>
+<li>perform basic network analysis to create derived graph properties,</li>
 <li>visualize graphs and their properties.</li>
 </ul>
 <p>For further background on <code>graph-tool</code> refer to the <a href="../graph-tutorial">graph tutorial slides</a> and the <a href="../graph-tool-tutorial-todo.ipynb">tutorial notebook</a>. There you can also find instructions on how to use the <code>py36 conda</code> environment in the Big Data Lab, which has all required dependencies installed.</p>
@@ -11880,7 +11880,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this graph an edge represents a power supply line. A node is either a generator, a transformator or a substation.</p>
+<p>In this graph an edge represents a power supply line. A node is either a generator, a transformator, or a substation.</p>
 <p><strong>Task 1a</strong>: Create a drawing of this graph that emphasizes nodes that have more than 10 incident power supply lines. Set the size of all other nodes to 0, but retain visibility of the power lines.</p>
 
 </div>
@@ -12027,7 +12027,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Task</strong>: Create this as an undirected graph, remove parallel edges, and draw using a layout that resembles the tidy example given in the <a href="../09_networks.pdf">lecture</a>.</p>
+<p><strong>Task</strong>: Create an undirected graph based on the information above, remove parallel edges, and draw it using a layout that resembles the tidy example given in the <a href="../09_networks.pdf">lecture</a>.</p>
 
 </div>
 </div>
@@ -12092,7 +12092,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For the following question let us work with a real social graph, based on facebook friendship connections. Please download <a href="https://snap.stanford.edu/data/ego-Facebook.html"><code>facebook_combined.txt</code> from SNAP</a>, the Stanford Large Network Dataset Collection SNAP large-graph repository and create a <code>Graph</code> object with <code>graph-tool</code>. The dataset contains the ego networks of 10 facebook users, i.e. the friends of each of these users and the connections among those friends.</p>
+<p>For the following question let us work with a real social graph of facebook friendship connections. Please download <a href="https://snap.stanford.edu/data/ego-Facebook.html"><code>facebook_combined.txt</code> from SNAP</a>, the Stanford Large Network Dataset Collection and create a <code>Graph</code> object with <code>graph-tool</code>. The dataset contains the ego networks of 10 facebook users, i.e. the friends of each of these users and the connections among those friends.</p>
 <p>Goal of this questions is to use centrality measures to determine influencers among the users, not including the ego nodes themselves.</p>
 
 </div>

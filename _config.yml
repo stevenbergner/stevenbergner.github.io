@@ -34,3 +34,5 @@ plugins:
 exclude:
 - Gemfile
 - Gemfile.lock
+- vendor
+- _includes

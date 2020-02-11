@@ -2,7 +2,7 @@
 layout: slide
 author: Steven Bergner
 title: Graph-tool tutorial
-date: November 19th, 2018
+date: February 11th, 2020
 theme: beige
 transition: fade-in
 ---
@@ -31,20 +31,20 @@ transition: fade-in
 
 <section>
 # Lab setup
-* Activate the `py36` conda environment
+* Activate the `gt` conda environment
 ```
 mkdir -p ~/.conda/envs
-ln -s /usr/shared/CMPT/big-data/condaenv/py36 ~/.conda/envs
-source activate py36
+ln -s /usr/shared/CMPT/big-data/condaenv/gt ~/.conda/envs
+source activate gt
 ```
 * And load the `graph_tool` module
 ```
 python
 >>> import graph_tool.all as gt
 >>> print(gt.__version__.split(' ')[0])
-2.27
+2.29
 ```
-* Environment also contains `pandas, jupyter (dashboards), statsmodels, bqplot, qgrid, ...`
+* Environment also contains `pandas, jupyter (lab),  ...`
 {: .small }
 </section>
 

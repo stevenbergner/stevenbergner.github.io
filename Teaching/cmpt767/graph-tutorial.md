@@ -2,7 +2,7 @@
 layout: slide
 author: Steven Bergner
 title: Graph-tool tutorial
-date: February 11th, 2020
+date: February 22nd, 2021
 theme: beige
 transition: fade-in
 ---
@@ -31,18 +31,18 @@ transition: fade-in
 
 <section>
 # Lab setup
-* Activate the `gt` conda environment
+* Activate the `pybd` conda environment
 ```
 mkdir -p ~/.conda/envs
-ln -s /usr/shared/CMPT/big-data/condaenv/gt ~/.conda/envs
-source activate gt
+ln -s /usr/shared/CMPT/big-data/condaenv/pybd ~/.conda/envs
+source activate pybd
 ```
 * And load the `graph_tool` module
 ```
 python
 >>> import graph_tool.all as gt
 >>> print(gt.__version__.split(' ')[0])
-2.29
+2.37
 ```
 * Environment also contains `pandas, jupyter (lab),  ...`
 {: .small }
@@ -63,7 +63,7 @@ python
 * {: fr} [Fast!](https://graph-tool.skewed.de/performance) - based on Boost Graph in C++, OpenMP
   - Utilize multiple cores if available
 * {: fr} Visualization
-  - Powerful [drawing algorithm](https://graph-tool.skewed.de/static/doc/draw.html)
+  - Powerful [drawing algorithms](https://graph-tool.skewed.de/static/doc/draw.html)
   - Interface with [graphviz](http://www.graphviz.org/) package
 * {: fr} Lots of graph processing algorithms
 </section>

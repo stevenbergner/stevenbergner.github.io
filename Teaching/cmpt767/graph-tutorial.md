@@ -2,7 +2,7 @@
 layout: slide
 author: Steven Bergner
 title: Graph-tool tutorial
-date: February 22nd, 2021
+date: February 28th, 2022
 theme: beige
 transition: fade-in
 ---

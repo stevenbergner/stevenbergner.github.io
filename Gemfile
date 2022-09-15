@@ -12,3 +12,5 @@ gem "github-linguist"
 
 gem "webrick", "~> 1.7"
 gem "commonmarker", ">= 0.23.4"
+
+gem "sassc"

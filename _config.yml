@@ -30,6 +30,7 @@ markdown: kramdown
 theme: jekyll-theme-leap-day
 plugins:
 - jekyll-feed
+# https://github.com/vwochnik/jekyll-email-protect
 - jekyll-email-protect
 exclude:
 - Gemfile

@@ -4,13 +4,10 @@ source 'https://rubygems.org'
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
 
-# https://github.com/vwochnik/jekyll-email-protect
-gem "jekyll-email-protect"
-
 # as per https://stackoverflow.com/questions/30590838/how-do-i-bundle-filter-gem-dependencies-mentioned-in-html-pipeline-post-install
-gem "github-linguist"
+#gem "github-linguist"
 
-gem "webrick", "~> 1.7"
-gem "commonmarker", ">= 0.23.4"
+#gem "webrick", "~> 1.7"
+#gem "commonmarker", ">= 0.23.4"
 
-gem "sassc"
+#gem "sassc"

@@ -69,13 +69,16 @@
     <script src="{{ "/reveal.js/dist/reveal.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/reveal.js/plugin/markdown/markdown.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/reveal.js/plugin/highlight/highlight.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/reveal.js/plugin/notes/notes.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/reveal.js/plugin/math/math.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/reveal.js/plugin/zoom-js/zoom.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/reveal.js/plugin/search/search.js" | prepend: site.baseurl }}"></script>
 
 <!--
-           dependencies: [
+    deactivated deps:
+    <script src="{{ "/reveal.js/plugin/notes/notes.js" | prepend: site.baseurl }}"></script>
+
+    old way of including deps as part of .initialize below:
+    dependencies: [
              { src: '{{ "/reveal.js/lib/js/classList.js" | prepend: site.baseurl }}', condition: function() { return !document.body.classList; } },
 ////             { src: '{{ "/reveal.js/plugin/markdown/marked.js" | prepend: site.baseurl }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 ////             { src: '{{ "/reveal.js/plugin/markdown/markdown.js" | prepend: site.baseurl }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
@@ -100,7 +103,7 @@
          transition: 'slide', // none/fade/slide/convex/concave/zoom
          {% endif %}
          // Optional reveal.js plugins
-         plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+         //plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
      });
     </script>
     {% include analytics.inc %}

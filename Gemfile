@@ -7,7 +7,7 @@ gem "github-pages", group: :jekyll_plugins
 # as per https://stackoverflow.com/questions/30590838/how-do-i-bundle-filter-gem-dependencies-mentioned-in-html-pipeline-post-install
 #gem "github-linguist"
 
-#gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.7"
 #gem "commonmarker", ">= 0.23.4"
 
 #gem "sassc"

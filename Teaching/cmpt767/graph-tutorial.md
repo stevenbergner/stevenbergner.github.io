@@ -31,18 +31,18 @@ transition: fade-in
 
 <section>
 # Lab setup
-* Activate the `pybd` conda environment
+* Activate the `gt` conda environment
 ```
 mkdir -p ~/.conda/envs
-ln -s /usr/shared/CMPT/big-data/condaenv/pybd ~/.conda/envs
-source activate pybd
+ln -s /usr/shared/CMPT/big-data/condaenv/gt ~/.conda/envs
+source activate gt
 ```
 * And load the `graph_tool` module
 ```
 python
 >>> import graph_tool.all as gt
 >>> print(gt.__version__.split(' ')[0])
-2.37
+2.46
 ```
 * Environment also contains `pandas, jupyter (lab),  ...`
 {: .small }

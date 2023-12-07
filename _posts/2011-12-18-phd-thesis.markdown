@@ -22,6 +22,6 @@ By assigning optical properties to data using a spectral light model, it becomes
 
 To help modellers to cope with the freedom in a large design space of synthetic lights and materials, I devise a method that generates a palette of presets that globally optimize user-specified criteria and regularization. This is augmented with two alternative user interfaces to unobtrusively choose a desired mixture.
 
-[phdpdf]: http://summit.sfu.ca/system/files/iritems1/12089/etd7005_SBergner.pdf "PhD thesis PDF file"
+[phdpdf]: https://summit.sfu.ca/_flysystem/fedora/sfu_migrate/12089/etd7005_SBergner.pdf "PhD thesis PDF file"
 [phdpresent]: {{ site.baseurl }}/assets/pub/bergner-phd-presentation.pdf "PhD seminar presentation"
 [phdlibrary]: http://summit.sfu.ca/item/12089 "Making choices in multi-dimensional parameter spaces"

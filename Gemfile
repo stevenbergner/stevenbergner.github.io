@@ -13,4 +13,4 @@ gem "webrick", "~> 1.7"
 #gem "sassc"
 
 gem "kramdown", ">= 2.3.1"
-gem "nokogiri", ">= 1.13.6"
+gem "nokogiri", ">= 1.18.9"

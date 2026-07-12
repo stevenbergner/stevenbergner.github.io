@@ -36,6 +36,37 @@ $P(k,l)=\int_\RR e^{ilf(x)-kx}dx$ (**Eq. 5**) in Section 3.2, we recognize it as
 
 The paper follows a different path of explanation to satisfy further technical conditions of the method and also to obtain a further statement about the "quasi"-ness of the bandlimit $\nu_h$, i.e. showing that $H$ decays exponentially beyond this limit.
 
+## 2026 note: composition, interchange, and provenance
+
+I am reopening this result as a focused follow-up note, not replacing the 2006
+paper. The core object remains the composed observable $h=g\circ f$, but the
+current emphasis is different: under which stated conditions may a composed
+quantity be rewritten, sampled, archived, and re-entered without losing the
+conditions that made the rewrite valid?
+
+In the original derivation, the visible move is spectral: separate the
+contribution of the transfer function from the scalar field and estimate the
+frequencies that matter for reconstruction. The new addendum should make the
+admissibility conditions more explicit: the relevant function spaces, the
+measure-theoretic interchanges behind the representation, the operator view of
+composition, and the regime in which stationary phase is a controlled
+approximation rather than a silent identity.
+
+The same discipline applies to publication. A future release should first be a
+citable archival object, for example a versioned release with a DOI and
+DataCite-style metadata. A content hash and timestamp proof can then serve as a
+provenance receipt: a way to witness that a specific file existed in a specific
+form. Content-addressed storage or a timestamping protocol may be useful here.
+Tokenization, if used at all, should not replace citation. It should be a
+lightweight receipt or sponsorship layer pointing to the archived DOI and hash,
+not a speculative collectible.
+
+That distinction matters mathematically as well as economically. The work is
+not a new claim to own function composition. It is a renewed mathematical
+reading of a published result: composition as a lawful transition between
+representations, where proof obligations, approximation regime, and publication
+receipt are all part of the object being communicated.
+
 [gofx]: {{ site.baseurl }}/assets/img/gofx-example.png "Fourier domain analysis of function composition"
 [phdpdf]: http://summit.sfu.ca/system/files/iritems1/12089/etd7005_SBergner.pdf "PhD thesis PDF file"
 [phdlibrary]: http://summit.sfu.ca/item/12089 "Making choices in multi-dimensional parameter spaces"

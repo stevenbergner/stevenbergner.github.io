@@ -7,7 +7,7 @@ breadcrumb: /
 breadcrumb_name: Home
 ---
 
-<p class="direction-lede">I am interested in work that leaves people and institutions more capable than it found them. These are areas I can discuss now, not a project-status report or a claim of institutional endorsement.</p>
+<p class="direction-lede">I am interested in work that leaves people and institutions more capable than it found them. This is a map of the topics and communities I hope to benefit, not a project-status report or a claim of institutional endorsement.</p>
 
 <div class="direction-principle">
   <span>Working principle</span>
@@ -46,8 +46,8 @@ Code, data transformations, model configurations, contribution histories, and re
 
 ---
 
-### A small public lane
+### How this page will develop
 
-This page is intentionally limited to areas ready for public discussion. Examples, teaching materials, software, and publications will be linked only when they are ready for responsible release.
+I will add public examples, teaching modules, software, and publications when they are ready for responsible release. Each item should say what it establishes, what remains uncertain, and who may use it.
 
 [Research notes and publications]({{ '/' | relative_url }}){: .direction-return}

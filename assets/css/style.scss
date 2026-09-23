@@ -13,3 +13,95 @@ code {
   color: black;
   text-shadow: 1px 1px 0px #bbb;
 }
+
+.direction-entry {
+  margin: 2.2rem 0 2.8rem;
+  padding: 1.6rem 1.75rem 1.5rem;
+  color: #f8f5ec;
+  background:
+    radial-gradient(circle at 86% 18%, rgba(255, 204, 0, 0.24), transparent 32%),
+    linear-gradient(135deg, #103c55 0%, #0c6670 62%, #42765f 100%);
+  border-radius: 4px;
+  box-shadow: 0 12px 28px rgba(16, 60, 85, 0.18);
+}
+
+.direction-entry h2 {
+  margin: 0 0 0.65rem;
+  color: #fff;
+  font-size: 1.65rem;
+}
+
+.direction-entry p {
+  max-width: 39rem;
+  margin-bottom: 1rem;
+}
+
+.direction-kicker,
+.direction-principle span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.direction-entry .direction-kicker {
+  margin-bottom: 0.35rem;
+  color: #f2d36a;
+}
+
+.direction-link {
+  display: inline-block;
+  color: #fff2b6;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 242, 182, 0.65);
+}
+
+.direction-link:hover {
+  color: #fff;
+  text-decoration: none;
+  border-bottom-color: #fff;
+}
+
+.direction-lede {
+  margin: 1.5rem 0 2rem;
+  padding-left: 1.15rem;
+  font-size: 1.18rem;
+  line-height: 1.55;
+  border-left: 4px solid #0c6670;
+}
+
+.direction-principle {
+  margin: 0 0 2.5rem;
+  padding: 1.2rem 1.35rem 1.1rem;
+  background: #e4f0ed;
+  border-top: 1px solid #8eb9ae;
+  border-bottom: 1px solid #8eb9ae;
+}
+
+.direction-principle span {
+  color: #0c6670;
+}
+
+.direction-principle p {
+  margin: 0.3rem 0 0;
+  font-size: 1.05rem;
+}
+
+.direction-return {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  .direction-entry {
+    margin: 1.25rem 0 2rem;
+    padding: 1.2rem;
+  }
+
+  .direction-entry h2 {
+    font-size: 1.4rem;
+  }
+
+  .direction-lede {
+    font-size: 1.05rem;
+  }
+}

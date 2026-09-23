@@ -6,10 +6,10 @@ layout: default
 * **email:** {% include protect-email.include email=site.email %}
 
 <div class="direction-entry">
-  <p class="direction-kicker">A public-interest map</p>
+  <p class="direction-kicker">Discussion areas</p>
   <h2>Where I hope to contribute</h2>
   <p>I am interested in work that leaves people and institutions more capable than it found them: safer uses of AI, durable research practice, and technical learning that continues beyond one project.</p>
-  <a class="direction-link" href="{{ '/contribute/' | relative_url }}">Explore the topics and communities &rarr;</a>
+  <a class="direction-link" href="{{ '/contribute/' | relative_url }}">Open the discussion areas &rarr;</a>
 </div>
 
 # [](#header-1) Research topics

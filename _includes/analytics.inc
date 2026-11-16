@@ -5,6 +5,9 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', '{{ site.google_analytics }}');
+  gtag('config', '{{ site.google_analytics }}', {
+    'allow_google_signals': false,
+    'allow_ad_personalization_signals': false
+  });
 </script>
 {% endif %}

@@ -24,6 +24,7 @@ owner_name: Steven Bergner
 github_username: git-steb
 google_scholar_link: "https://scholar.google.ca/citations?user=ibDDNIYAAAAJ&hl=en&oi=ao"
 orcid_link: "https://orcid.org/0009-0009-7453-8923"
+google_analytics: "G-3LM95WNJQX"
 
 defaults:
 - scope:

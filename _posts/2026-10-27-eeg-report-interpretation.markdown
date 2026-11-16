@@ -3,39 +3,53 @@ layout: post
 title:  "Structured interpretation of EEG reports with language models"
 date:   2026-10-27
 author: Steven Bergner
+description: "Local, grammar-constrained language models turn free-text EEG reports into structured research annotations while retaining ordinal label certainty."
 breadcrumb: /
 categories: research
 permalink: /research/eeg-report-interpretation/
 ---
 
-> **Status:** public medRxiv version 2; manuscript under submission to the IEEE
-> Journal of Biomedical and Health Informatics. This is a preprint, not an
-> accepted journal publication, and it has not been certified by peer review.
+> **Status:** public medRxiv version 2; manuscript under submission. This is a
+> preprint, not an accepted journal publication, and it has not been certified
+> by peer review.
 
-Clinical evidence is often preserved in narrative reports that are useful to
-specialists but difficult to analyze at scale. This project studies how locally
-run language models can convert free-text EEG reports into structured research
-annotations while retaining an ordinal certainty tier for each assigned label.
+EEG reports preserve specialist interpretation, but their narrative form makes
+cohort-scale analysis difficult. This study asks a bounded question: can a
+locally run, grammar-constrained language model convert free-text EEG reports
+into structured research annotations without discarding the certainty expressed
+in the original interpretation?
+
+[Read medRxiv version 2][preprint] · [Cite the DOI][doi]
 
 ## Abstract at a glance
 
 * **Objective.** Extract structured diagnostic labels and label-certainty tiers
   from unstructured, free-text EEG reports.
-* **Method.** Compare grammar-constrained local language models with expert
-  annotations and lower-resource NLP baselines.
-* **Result.** The studied pipelines produced high agreement on core report
-  classifications, with a remaining challenge in representing nuanced
-  certainty.
-* **Pathway.** The work provides a principled route toward reviewable
-  annotation support by preserving assigned label certainty, benchmarking
-  against expert annotations, and keeping structured outputs inspectable;
-  prospective validation and clinical governance are the next gates.
+* **Evaluation.** Compare grammar-constrained local models with a designated
+  Reference Annotator, a second certified EEG technologist, and lower-resource
+  NLP baselines while keeping the output schema inspectable.
+* **Main result.** For overall abnormality, Mistral-7B reached 96% Core
+  Agreement with the Reference Annotator; the second annotator reached 98%.
+  The local model also recovered rare epileptiform findings for which the
+  tested baselines produced few or no true positives.
+* **Remaining difficulty.** Among reports whose absence-or-presence decisions
+  already matched, exact certainty tiers agreed about 80% of the time for
+  Mistral-7B versus 90% and 94% for the second annotator on the two evaluated
+  report sets.
+* **Boundary.** These are agreement results for research annotation. They do
+  not establish diagnostic ground truth, external validation, or readiness for
+  clinical deployment.
 
 ## One label, three views of agreement
 
 The schema encodes five judgments---overall abnormality and four specific
 finding categories---on one four-level ordinal scale. Each label pairs a
 presence-or-absence decision with an expressed certainty tier.
+
+That distinction matters because a binary label can preserve the direction of
+an interpretation while erasing how firmly it was expressed. Treating
+certainty as part of the structured output makes that loss measurable rather
+than hiding it inside a single accuracy number.
 
 <div class="confidence-scale" aria-label="Four-level label-certainty scale">
   <div class="confidence-level"><strong>1</strong><span>certain absence</span></div>
@@ -59,6 +73,20 @@ That single label supports three nested readings:
   <a href="{{ site.baseurl }}/assets/img/eeg-structured-pipeline.png"><img src="{{ site.baseurl }}/assets/img/eeg-structured-pipeline.png" alt="Diagram separating prompt development, local EEG report processing, and agreement evaluation"></a>
   <figcaption>The paper separates development, local report processing, and evaluation. Reference labels re-enter only after inference, and grammars constrain machine-readable structure rather than clinical correctness.</figcaption>
 </figure>
+
+## What the pipeline contributes
+
+The pipeline joins three properties that are often separated: local execution
+over de-identified narratives, grammar-constrained machine-readable output,
+and an evaluation that keeps the core decision distinct from agreement on
+certainty. A bounded portability analysis also held the task, labels, output
+grammar, report identifiers, reference annotations, and endpoints fixed while
+adapting the prompt presentation to a newer local model.
+
+> **Interpretation boundary:** the grammar constrains output structure, not
+> clinical correctness. Agreement with the designated Reference Annotator is
+> not the same as diagnostic truth, and the current study does not replace
+> expert review.
 
 ## Thesis-to-publication pathway
 

@@ -20,6 +20,7 @@
     <meta property="og:description" content="{{ meta_description | escape }}">
     <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url }}">
     <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+    {% include analytics.inc %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>

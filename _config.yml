@@ -24,7 +24,20 @@ owner_name: Steven Bergner
 github_username: git-steb
 google_scholar_link: "https://scholar.google.ca/citations?user=ibDDNIYAAAAJ&hl=en&oi=ao"
 orcid_link: "https://orcid.org/0009-0009-7453-8923"
-google_analytics: UA-92210578-1
+
+defaults:
+- scope:
+    path: "_posts/2006-03-31-function-composition.markdown"
+  values:
+    mathjax: true
+- scope:
+    path: "_posts/2017-02-16-lattice-refinement.markdown"
+  values:
+    mathjax: true
+- scope:
+    path: "Teaching/cmpt767/hw3/index.md"
+  values:
+    mathjax: true
 
 # Build settings
 markdown: kramdown
@@ -37,4 +50,3 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - vendor
-- _includes

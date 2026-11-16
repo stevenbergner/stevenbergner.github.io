@@ -176,7 +176,7 @@ reproducible analysis pipeline.
 </style>
 
 <div class="author-roster" aria-label="Full author group and institutional context">
-  <div class="author-roster-row"><span class="author-roster-name">Wanying Tian <span class="author-roster-note">equal contributor</span></span><span class="author-roster-context">SFU Computing Science · Biomedical Physiology and Kinesiology</span></div>
+  <div class="author-roster-row"><span class="author-roster-name">Wanying Tian <span class="author-roster-note">equal contributor</span></span><span class="author-roster-context">SFU Computing Science</span></div>
   <div class="author-roster-row"><span class="author-roster-name">Steven Bergner <span class="author-roster-note">equal contributor</span></span><span class="author-roster-context">SFU Computing Science</span></div>
   <div class="author-roster-row"><span class="author-roster-name">Alexander Moiseev</span><span class="author-roster-context">SFU Biomedical Physiology and Kinesiology</span></div>
   <div class="author-roster-row"><span class="author-roster-name">Fred Popowich</span><span class="author-roster-context">SFU Computing Science</span></div>
